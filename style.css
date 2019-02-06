@@ -19,8 +19,17 @@ body {
     z-index: -1;
 }
 
-.container {
-    margin: 0 3%;
+#signUpSlash {
+    width: 547px;
+    height: 298px;
+    border: 1px solid #CA0D43;
+    background: #CA0D43;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transform: skewY(36deg) translate(0,580px);
+    z-index: -1;
 }
 
 h1 {
@@ -48,7 +57,7 @@ h1 {
     transform: translate(90px,40px);
 }
 
-button {
+.button {
     position: absolute;
     right: 0;
     padding: 10px;
@@ -58,4 +67,33 @@ button {
     margin-top: 80px;
     margin-right: 170px;
     display: block;
+}
+
+#cta {
+    width: 418px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sign-up {
+    padding: 10px 55px;
+    background: #CA0D43;
+    color: white;
+    border: 1px solid #CA0D43;
+    border-radius: 0px 15px;
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+span {
+    color: #CA0D43;
+    margin-left: 50px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.textFields {
+    margin-bottom: 0 !important;
 }
