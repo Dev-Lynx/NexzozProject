@@ -4,6 +4,7 @@ body {
     box-sizing: border-box;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 
 #slash {
@@ -41,6 +42,8 @@ h1 {
     margin-bottom: 50px;
 }
 
+/*====HOME PAGE====*/
+
 .display-images {
     display: inline-block;
 }
@@ -69,6 +72,9 @@ h1 {
     display: block;
 }
 
+/*====SIGNUP PAGE====*/
+
+
 #cta {
     width: 418px;
     height: 40px;
@@ -76,15 +82,22 @@ h1 {
     justify-content: space-between;
 }
 
-#sign-up {
-    padding: 10px 55px;
+#sign-up,
+#sign-in {
+    padding: 10px 40px;
     background: #CA0D43;
     color: white;
     border: 1px solid #CA0D43;
-    border-radius: 0px 15px;
-    display: block;
+    border-radius: 0px 10px;
     font-size: 1.2em;
     font-weight: bold;
+    float: right;
+}
+
+form p {
+    display: inline-block;
+    margin-top: 0;
+    text-align: right;
 }
 
 span {
@@ -96,4 +109,51 @@ span {
 
 .textFields {
     margin-bottom: 0 !important;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #CA0D43 !important;
+  }
+/* label focus color */
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field input[type=password]:focus + label {
+    color: #CA0D43 !important;
+  }
+  /* label underline focus color */
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=password]:focus {
+    border-bottom: 1px solid #CA0D43 !important;
+    box-shadow: 0 1px 0 0 #CA0D43 !important;
+  }
+
+aside {
+    float: right;
+}
+
+.undrawImage1,.undrawImage2 {
+    float: right;
+    width: 321px;
+    height: 296px;
+}
+
+.undrawImage1 {
+    display: none;
+}
+
+aside h4 {
+    margin-top: 340px;
+    text-align: right;
+    color: #CA0D43;
+    font-weight: 600;
+}
+
+#form1 {
+    display: none;
+}
+
+#form2 {
+    margin-top: 100px;
 }
