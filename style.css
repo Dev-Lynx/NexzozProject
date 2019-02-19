@@ -94,7 +94,7 @@ h1 {
     transition: all 300ms;
 }
 
-button:hover {
+#get-started:hover {
     background: #FFF;
     color: #CA0D43;
 }
