@@ -294,11 +294,11 @@ aside h4 {
     }
     .container-home:after {
         height: 490px;
-        -webkit-transform: skewY(14deg);
-        -moz-transform: skewY(14deg);
-        -ms-transform: skewY(14deg);
-        -o-transform: skewY(14deg);
-        transform: skewY(14deg);
+        -webkit-transform: skewY(22deg);
+        -moz-transform: skewY(22deg);
+        -ms-transform: skewY(22deg);
+        -o-transform: skewY(22deg);
+        transform: skewY(22deg);
     }
 }
 
