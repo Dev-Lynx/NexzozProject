@@ -7,31 +7,39 @@ body {
     overflow: hidden;
 }
 
-#slash {
-    width: 1902px;
-    height: 992px;
-    border: 1px solid #CA0D43;
-    background: #CA0D43;
+.container-home:after {
+    content: '';
     position: absolute;
-    top: 0;
     left: 0;
-    overflow: hidden;
-    transform: skewY(16deg) translate(-339px,-673px);
+    top: -193px;
+    overflow: visible;
+    width: 100%;
+    height: 431px;
+    background: #CA0D43;
     z-index: -1;
-}
+    -webkit-transform: skewY(16deg);
+    -moz-transform: skewY(16deg);
+    -ms-transform: skewY(16deg);
+    -o-transform: skewY(16deg);
+    transform: skewY(16deg);
+  }
 
-#signUpSlash {
-    width: 547px;
-    height: 298px;
-    border: 1px solid #CA0D43;
-    background: #CA0D43;
+.container-signUp:after {
+    content: '';
     position: absolute;
-    top: 0;
     left: 0;
-    overflow: hidden;
-    transform: skewY(36deg) translate(0,580px);
+    top: 700px;
+    overflow: visible;
+    width: 100%;
+    height: 386px;
+    background: #CA0D43;
     z-index: -1;
-}
+    -webkit-transform: skewY(28deg);
+    -moz-transform: skewY(28deg);
+    -ms-transform: skewY(28deg);
+    -o-transform: skewY(28deg);
+    transform: skewY(28deg);
+  }
 
 h1 {
     position: absolute;
@@ -47,10 +55,11 @@ h1 {
 
 .display-images {
     display: inline-block;
-    position: relative;
+    position: absolute;
+    right: 0;
+    margin-right: 12%;
     width: 500px;
     height: 400px;
-    margin-left: 50%;
 }
 
 #first-image {
@@ -69,31 +78,36 @@ h1 {
     height: auto;
 }
 
-button {
+#get-started {
     position: absolute;
     right: 0;
-    padding: 10px;
+    bottom: 0;
+    font-size: 1.3em;
+    margin-bottom: 2%;
+    padding: 15px 75px;
     background: #CA0D43;
     color: white;
     border: 1px solid #CA0D43;
     margin-right: 12%;
     display: block;
+    transition: all 300ms;
+}
+
+button:hover {
+    background: #FFF;
+    color: #CA0D43;
 }
 
 @media screen and (max-width: 767px) {
     /*====HOME PAGE MEDIA QUERIES====*/   
-    #slash {
-        width: 2190px;
-        height: 500px;
-        transform: skewY(22deg);
-    }
     h1 {
         font-size: 3em;
+        margin-left: 5%;
     }    
     .display-images {
         width: 376px;
         height: 285px;
-        margin-left: 39%;
+        margin-right: 5%;
     }
     #first-image {
         width: 300px;
@@ -101,7 +115,40 @@ button {
     #second-image {
         width: 300px;
     }
+    .container-home:after {
+        height: 390px;
+        -webkit-transform: skewY(20deg);
+        -moz-transform: skewY(20deg);
+        -ms-transform: skewY(20deg);
+        -o-transform: skewY(20deg);
+        transform: skewY(20deg);
+      }
+      #get-started {
+          margin-bottom: 11%;
+      }
     
+}
+@media screen and (max-width: 580px) {
+    h1 {
+        margin-top: 60%;
+    }    
+    .display-images {
+        margin-right: 19%;
+    }
+    #get-started {
+        margin-bottom: 18%;
+    }
+    #logo {
+        height: 50px;
+    }
+    .container-home:after {
+        height: 490px;
+        -webkit-transform: skewY(6deg);
+        -moz-transform: skewY(6deg);
+        -ms-transform: skewY(6deg);
+        -o-transform: skewY(6deg);
+        transform: skewY(6deg);
+      }
 }
 
 /*====SIGNUP PAGE====*/
@@ -188,4 +235,31 @@ aside h4 {
 
 #form2 {
     margin-top: 100px;
+}
+
+/*====MEDIA QUERIES====*/
+@media screen and (max-width: 767px) {
+    #sign-up,
+    #sign-in {
+        padding: 15px 0;
+        width: 90%;
+    }
+    form p {
+        width: 100%;
+    }
+    .container-signUp:after {
+        top: 570px;
+    }
+    aside h4 {
+        font-size: 2em !important;
+    }
+    .undrawImage1,.undrawImage2 {
+        float: right;
+        width: 250px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    
 }
